@@ -1,0 +1,57 @@
+body{
+    max-width: 1162px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.result{
+    padding: 30px 0;;    
+}
+.line{
+    display: inline-block;
+    vertical-align: middle;
+}
+.result__output{
+    width: 79%;
+}
+.result__output input, .result__but button{
+    width: 100%;
+}
+.result__but{
+    width: 20%;
+}
+.formsender{
+    text-align: center;
+}
+#forms{
+    border: 1px solid #000;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin: 25px auto;
+    padding: 50px;
+}
+.form__line{
+    padding-bottom: 15px;
+}
+.form__line label, .form__line input{
+    display: inline-block;
+}
+.form__line label{
+    width: 20%;
+    text-align: right;
+    padding-right: 25px;
+}
+.form__line input{
+    width: 55%;
+    text-align: left;
+}
+#headline{
+    font-weight: bold;
+}
+
+.corect{
+    text-align: center;
+    cursor: pointer;
+    width: 10%!important;
+}

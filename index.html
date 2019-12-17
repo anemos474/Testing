@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="style.css" rel="stylesheet" />
+<title>Test</title>
+</head>
+<body>
+<div class="result">
+    <div class="line result__output"><input placeholder="Winners:" id="winElem"></div>
+    <div class="line result__but"><button onclick="win();">New Winners</button></div>
+</div>
+<div class="formsender">
+    <form id="forms" onsubmit="return false">
+        <div class="forms__block">  
+            <h2>Regestration form</h2>  
+            <div class="form__line"><label>Name:</label><input data-name="names" required type="text" id="names" name="name" pattern="[A-Za-zА-Яа-яЁё]{1,15}" placeholder="Name"></div>       
+            <div class="form__line"><label>Surname:</label><input data-name="surname" required type="text" id="surname" name="surname" pattern="[A-Za-zА-Яа-яЁё]{1,20}" placeholder="Surname"></div> 
+            <div class="form__line"><label>Email:</label><input required data-name="email" type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@google.com"></div>       
+            <div class="form__line"><label>Phone:</label><input type="tel" data-name="phone" name="phone" id="phone" pattern="[0-9]{5} [0-9]{3} [0-9]{4}" placeholder="38097 456 7890"></div>      
+            <div class="form__line"><label>Birth date:</label><input type="text" data-name="date" name="date" id="date" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" placeholder="dd.mm.yyyy"></div>    
+        </div> 
+        <div><input type="submit" onclick="adds();"></div>             
+    </form>
+</div>
+<div class="participant">
+    <table id="result">
+        <tr id="headline"></tr>
+    </table>
+</div>
+
+<script src="script.js"></script>    
+</body>
+</html>
